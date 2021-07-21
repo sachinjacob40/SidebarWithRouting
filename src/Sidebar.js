@@ -49,6 +49,7 @@ const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,sideBarOverMainConte
   
   }
 
+
   return (
     <Router>
     <ProSidebar
@@ -150,10 +151,15 @@ const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,sideBarOverMainConte
     </ProSidebar>
     <Switch>
           <Route path="/about">
-            <About/>
+            <About
+            collapse={collapse}
+            sideBarOverMainContent={sideBarOverMainContent}/>
           </Route>
           <Route path="/advertisement">
-           <Hello/>
+           <Hello
+           collapse={collapse}
+           sideBarOverMainContent={sideBarOverMainContent}
+           />
           </Route>
           <Route path="/">
             <Main 
