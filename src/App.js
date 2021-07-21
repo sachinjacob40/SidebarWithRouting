@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 
 function App() {
 
-  const [sideBarOverMainContent,setSidebaroverMainContent]=React.useState(false);//type of sidebar
+  const [sideBarOverMainContent,setSidebaroverMainContent]=React.useState(true);//type of sidebar
   const[collapse,setCollapse]=React.useState(false);
 
    
