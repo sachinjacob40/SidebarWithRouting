@@ -2,10 +2,16 @@ import React from "react";
 
 
 
-function Hello(){
+function Hello({sideBarOverMainContent,collapse}){
     return (
-        <div>ADVERTISEMENT</div>
-    
+      <main  className={sideBarOverMainContent && !collapse?'blurbackground':''}>        
+        <div>ADVERTISEMENT
+          <div>
+            DATA
+          </div>
+        </div>
+        </main>
+
       )
 }
   
