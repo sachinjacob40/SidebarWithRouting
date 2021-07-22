@@ -8,13 +8,12 @@ const About = ({
   handleCollapsedChange,
   handleRtlChange,
   handleImageChange,
-  sideBarOverMainContent,
   collapse
 }) => {
   
   
   return (
-    <main className={sideBarOverMainContent && !collapse?'blurbackground':''}>
+    <main style={{marginLeft:collapse?50:250}}>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
       </div>
       <header>
