@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar';
 
 function App() {
 
-  const [sideBarOverMainContent,setSidebaroverMainContent]=React.useState(true);//type of sidebar
+  const [sideBarOverMainContent,setSidebaroverMainContent]=React.useState(false);//type of sidebar
   const[collapse,setCollapse]=React.useState(false);
 
    
