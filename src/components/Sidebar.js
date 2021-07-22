@@ -22,7 +22,7 @@ import LeftarrowIcon from '../images/leftarrow.png'
 import About from './About';
 import $ from 'jquery';
 import Hello from './Advertisement'
-const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,sideBarOverMainContent,setCollapse,collapse }) => {
+const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,setCollapse,collapse }) => {
 
 
   const [prevMenuItem,setPrevMenuItem]=React.useState(getSelectedMenu());
@@ -59,7 +59,7 @@ const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,sideBarOverMainConte
       toggled={toggled}
       breakPoint="md"
       //onToggle={handleToggleSidebar}
-     className={sideBarOverMainContent?'pro-sidebarNew':'pro-sidebar'}
+      style={{position:'fixed'}}
     >
       <SidebarHeader>
         <div
@@ -153,18 +153,16 @@ const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,sideBarOverMainConte
           <Route path="/about">
             <About
             collapse={collapse}
-            sideBarOverMainContent={sideBarOverMainContent}/>
+            />
           </Route>
           <Route path="/advertisement">
            <Hello
            collapse={collapse}
-           sideBarOverMainContent={sideBarOverMainContent}
            />
           </Route>
           <Route path="/">
             <Dashboard 
             collapse={collapse}
-            sideBarOverMainContent={sideBarOverMainContent}
             />
           </Route>
         </Switch>

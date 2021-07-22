@@ -4,10 +4,10 @@ import websites from '../websites';
 
 
 
-function Advertisement({sideBarOverMainContent,collapse}){
+function Advertisement({collapse}){
   
     return (
-      <main  className={sideBarOverMainContent && !collapse?'blurbackground':''} style={{padding:7,overflowY:'inherit'}}>        
+      <main style={{padding:7,overflowY:'inherit',marginLeft:collapse?50:250}}>        
         
       <div>
         {websites.map((website, index) => (

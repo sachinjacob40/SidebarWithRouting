@@ -26,23 +26,6 @@ body {
 .pro-menu-item:hover{
   background-color: dimgrey;
 }
-.blurbackground{
-  background-color: black;
-  opacity: 0.5;
-  pointer-events: none;
-  transition: width, left, right, 1.3s;
-}
-
-.pro-sidebarNew{
-  position: absolute;
-  color: #adadad;
-    height: 100%;
-    width: 270px;
-    min-width: 270px;
-    text-align: left;
-    transition: width, left, right, 0.3s;
-    z-index: 1009;
-}
 
 #root {
   height: 100%;
@@ -112,6 +95,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    transition: all 0.3s;
+    
     header {
       margin-bottom: 40px;
       border-bottom: 1px solid #efefef;
