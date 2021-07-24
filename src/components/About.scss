@@ -1,9 +1,5 @@
-
-$red: #ec008c;
 $white: #fefefe;
 $gray: #444;
-$lightGray: lighten($gray, 30);
-
 $transitionDuration: .3s;
 $transition: all $transitionDuration ease-in-out;
 
@@ -31,14 +27,6 @@ section
     }
 }
 
-
-/*
-*
-*
-START // CHART'S RULES
- -> "if you're picking code, don't forget the variables :)"
-*/
-
 .chart
 {
     font-size: 1em;
@@ -49,7 +37,6 @@ START // CHART'S RULES
 }
 
 $faceColor: rgba($white, .3);
-$growColor: rgba($red, .6);
 
 .bar
 {
@@ -112,7 +99,7 @@ $growColor: rgba($red, .6);
 .growing-bar
 {
     transition: $transition;
-    background-color: $growColor;
+    background-color:orange;
     width: 100%;
     height: 2em;
 }
