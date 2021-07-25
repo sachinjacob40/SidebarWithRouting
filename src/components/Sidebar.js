@@ -59,7 +59,6 @@ const Sidebar = ({ image, rtl, toggled, handleToggleSidebar,setCollapse,collapse
       toggled={toggled}
       breakPoint="md"
       //onToggle={handleToggleSidebar}
-      style={{position:'fixed'}}
     >
       <SidebarHeader>
         <div

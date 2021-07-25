@@ -13,7 +13,7 @@ const Dashboard = ({
   
   
   return (
-    <main style={{marginLeft:collapse?50:250}}>
+    <main>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
       </div>
       <header>
