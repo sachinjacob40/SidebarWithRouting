@@ -7,7 +7,7 @@ import websites from '../websites';
 function Advertisement({collapse}){
   
     return (
-      <main style={{padding:7,overflowY:'inherit',marginLeft:collapse?50:250}}>        
+      <main>        
         
       <div>
         {websites.map((website, index) => (

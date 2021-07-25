@@ -31,7 +31,7 @@ const About = ({
   },[])
   
   return (
-    <main style={{marginLeft:collapse?50:250}}>
+    <main>
     
     <div style={{background: '#d0d0d0',margin:'0rem 21rem'}}>
         <section>
